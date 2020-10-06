@@ -1,0 +1,35 @@
+.hero.is-info.is-bold {
+    background-image: url(pexels-kei-scampa-4894418.jpg);
+}
+.hero.is-info {
+    color: #fff;
+}
+.hero {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero-body {
+    background-image: url(pexels-kei-scampa-4894418.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 3rem 1.5rem;
+}
+.container {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+.hero-body2 {
+    background-image: url(serve_heart.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}

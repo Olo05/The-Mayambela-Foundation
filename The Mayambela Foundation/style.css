@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:20');
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 1000px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+    box-sizing: border-box;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+    pointer-events: none;
+}
+.banner .content {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.banner .content p {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.gallery-section {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #f1f1f1;
+}
+
+.inner-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.gallery-section h1{
+    text-align: center;
+    text-decoration: uppercase;
+    color: #333;
+}
+.border {
+    width: 180px;
+    height: 4px;
+    background: #333;
+    margin: 60px auto;
+}
+.gallery-section .gallery {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.gallery-section .image {
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery-section .image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+.gallery-section .image:hover img {
+    transform: scale(1.4) rotate(15deg);
+}
+
+@media screen and (max-width:960px) {
+    .gallery-section .image {
+        flex: 33.33%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gallery-section .image {
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .gallery-section .image {
+        flex: 100%;
+    }
+}
+
+/* contact-form */
+
+#parallax-1 {
+    background: url('pexels-pixabay-33688.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px solid coral;
+}
+.hero-body {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 3rem 1.5rem;
+}
+.container {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+.columns:last-child {
+    margin-bottom: -.75rem;
+}
+.columns {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+.title.is-1 {
+    font-size: 3rem;
+}
+.title {
+    color: white;
+    font-weight: 800;
+    font-family: 'Nunito Sans', sans-serif;
+    text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(0, 0, 3);
+    line-height: 1.125;
+}
+hr.content-divider {
+    max-width: 75px;
+    height: 5px;
+}
+hr {
+    border: none;
+    display: block;
+    margin: 1.5rem 0;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+}
+.subtitle {
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(0, 0, 3);
+    font-weight: 400;
+    line-height: 1.25;
+}
+.subtitle, .title {
+    word-break: break-word;
+}
+.button.is-white.is-inverted {
+    background-color: #0a0a0a;
+    color: #fff;
+}
+.button.is-white {
+    border-color: transparent;
+}
+.button {
+    border-width: 1px;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(.5em - 1px);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: calc(.5em - 1px);
+    text-align: center;
+    white-space: nowrap;
+}
+#parallax-2 {
+    background: url('We\ have\ a\ huge\ responsibility\ at\ our\ hands.\ Help\ us\ make\ a\ difference\ _heart.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px solid yellow;
+}
+
+#parallax-3 {
+    background: url('Supporting\ local\ football_soccer_️_heart.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px solid hotpink;
+}#parallax-4 {
+    background: url('pexels-vlad-chețan-2537644.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px solid yellow;
+}
+#parallax-3 hr {
+    background: hotpink;
+}
+.hero {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cta {
+    height: 500px;
+    border-top: 10px solid turquoise;
+} 
+.cta {
+    background: url(data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.4296875%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E), 
+    linear-gradient(52deg, #42475C 0%, #20222E 71%);
+}
+.va {
+    display: flex;
+    align-items: center;
+}
+.story {
+    padding: 6rem;
+}
+.has-text-centered {
+    text-align: center!important;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+.hero {
+    background: url('download.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
